@@ -1,0 +1,6 @@
+ansible-sandbox-managed-1
+ansible-sandbox-managed-2
+
+[all:vars]
+ansible_user = admin
+ansible_password = password
