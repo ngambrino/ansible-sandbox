@@ -4,6 +4,7 @@ services:
       dockerfile: ./dockerfiles/control.Dockerfile
     volumes:
       - ./ansible:/ansible
+      - /ansible/venv
     tty: true
     stdin_open: true
     working_dir: /ansible
