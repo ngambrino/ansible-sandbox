@@ -8,8 +8,6 @@ services:
     tty: true
     stdin_open: true
     working_dir: /ansible
-    networks:
-      - ansible-sandbox
 
   managed:
     build:
@@ -17,8 +15,3 @@ services:
     deploy:
       mode: replicated
       replicas: 2
-    networks:
-      - ansible-sandbox
-
-networks:
-  ansible-sandbox:
