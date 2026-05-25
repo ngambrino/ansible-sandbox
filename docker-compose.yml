@@ -1,7 +1,7 @@
 services:
   control:
     build:
-      dockerfile: ./dockerfiles/Dockerfile.control
+      dockerfile: ./dockerfiles/control.Dockerfile
     volumes:
       - ./ansible:/ansible
     tty: true
@@ -12,7 +12,7 @@ services:
 
   managed:
     build:
-      dockerfile: ./dockerfiles/Dockerfile.managed
+      dockerfile: ./dockerfiles/managed.Dockerfile
     deploy:
       mode: replicated
       replicas: 2
